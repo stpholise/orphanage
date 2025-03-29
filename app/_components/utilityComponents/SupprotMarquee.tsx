@@ -14,7 +14,7 @@ const SupprotMarquee = () => {
   return (
     <div>
         <Marquee>
-            {
+            { 
                 marqueeContents.map((item, index) => (
                     <div key={index} className="">
                         <Image 
