@@ -13,7 +13,7 @@
   
 const Ellipse = ({data} : EllipseProps) => {
   return (
-    <div className='w-96'>
+    <div className='lg:w-96 md:w-80'>
         <PieChart 
             startAngle={-90} 
             radius={50} 
