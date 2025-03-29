@@ -2,7 +2,7 @@
 
 const HomeHero = () => {
   return (
-    <div className="h-96 md:h-[700px] bg-[url('/images/BG-Image.jpg')]  bg-cover w-full  ">
+    <div className="h-96 md:h-[700px] bg-[url('/Images/BG-Image.jpg')]  bg-cover w-full  ">
         <div className="container mx-auto text-white md:px-8 px-4 py-8 md:py-16  h-full flex flex-col justify-between">
             <div className="max-w-2xl flex flex-col gap-12 pt-4 md:mt-12">
                 <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold">Inclusive care for children with special needs</h1>
