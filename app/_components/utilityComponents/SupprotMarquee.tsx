@@ -2,12 +2,12 @@
  import Image from 'next/image'
 
  const marqueeContents: string[] = [
-    '/Logos/logo1.svg',
-    '/Logos/logo2.svg',
-    '/Logos/logo3.svg',
-    '/Logos/logo4.svg',
-    '/Logos/logo5.svg',
-    '/Logos/logo6.svg'
+    '/Logos/Logo1.svg',
+    '/Logos/Logo2.svg',
+    '/Logos/Logo3.svg',
+    '/Logos/Logo4.svg',
+    '/Logos/Logo5.svg',
+    '/Logos/Logo6.svg'
  ]
  
 const SupprotMarquee = () => {
