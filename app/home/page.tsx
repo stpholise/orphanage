@@ -92,7 +92,7 @@ const page = () => {
                     </div>
                     <div className=' hidden md:flex justify-center items-center w-full bg-[] '>
                         <Image 
-                            src='/images/BG1.jpg'
+                            src='/Images/BG1.jpg'
                             alt='kids image'
                             width='100'
                             height='100'
@@ -145,7 +145,7 @@ const page = () => {
                     </div>
                     <div className='hidden md:flex '>
                         <Image 
-                            src='/images/BG2.jpg'
+                            src='/Images/BG2.jpg'
                             alt='kids image'
                             width='100'
                             height='100'
