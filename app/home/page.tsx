@@ -92,7 +92,7 @@ const page = () => {
                     </div>
                     <div className=' hidden md:flex justify-center items-center w-full bg-[] '>
                         <Image 
-                            src='/images/BG1.jpg'
+                            src='/Images/BG1.jpg'
                             alt='kids image'
                             width='100'
                             height='100'
@@ -145,7 +145,7 @@ const page = () => {
                     </div>
                     <div className='hidden md:flex '>
                         <Image 
-                            src='/images/BG2.jpg'
+                            src='/Images/BG2.jpg'
                             alt='kids image'
                             width='100'
                             height='100'
@@ -210,7 +210,7 @@ const page = () => {
         {/* =========================================================================== */}
         <div className="">
             <div className="container mx-auto flex flex-col gap-24 lg:px-8 px-4 py-9 md:py-12 lg:py-14">
-                <div className="flex w-full lg:gap-16 items-center justify-center bg-[url('/Images/BG-image.jpg')] h-72 py-9 md:h-96 rounded-lg ">
+                <div className="flex w-full lg:gap-16 items-center justify-center bg-[url('/Images/BG-Image.jpg')] bg-cover h-72 py-9 md:h-96 rounded-lg ">
                     <div className={`flex flex-col px-4 items-center justify-center w-full md:w-[760px] md:px-4  gap-9 `}>
                        <h3 className="font-bold text-2xl md:text-4xl lg:text-5xl text-white ">You can contribute to provide a place for children with special needs!</h3>
                        <div className=" flex flex-col xs:flex-row items-center justify-center gap-4"> 

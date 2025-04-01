@@ -41,7 +41,7 @@ const Header = () => {
     <div >
         <div className="container mx-auto bg-white  flex items-center justify-between md:px-8 px-4  py-2 lg:py-4">
             <div className="logo flex gap-2 items-center">
-                <div className="button" onClick={handleMenuState} >
+                <div className="button md:hidden" onClick={handleMenuState} >
                   {  
                     isMenuOpen ?
                     <Image 
@@ -58,7 +58,7 @@ const Header = () => {
                     />
                 }
                 </div>
-                <Link href='/'>
+                <Link href='/' className='outline-none' >
                     <p className='text-black font-bold whitespace-nowrap'><span>largerthan</span> <span className={`${courgette.className}`}>i</span></p>
                 </Link>
             </div>
