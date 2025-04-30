@@ -1,5 +1,5 @@
-import Image from 'next/image'
-import Link from 'next/link'
+import Image from "next/image";
+import Link from "next/link";
 
 interface TeamMemberProp {
   imageUrl: string;
@@ -8,25 +8,32 @@ interface TeamMemberProp {
   facebook?: string;
   twitter?: string;
   linkedin?: string;
- }
+}
 
-const TeamMemberCard = ({imageUrl, teamMemberName, teamMemberPosition, facebook, twitter, linkedin}: TeamMemberProp) => {
+const TeamMemberCard = ({
+  imageUrl,
+  teamMemberName,
+  teamMemberPosition,
+  facebook,
+  twitter,
+  linkedin,
+}: TeamMemberProp) => {
   return (
     <div className="lg:w-72 text-center flex flex-col gap-3">
-      <Image 
-        src={imageUrl || '/teamMembers/loe.jpg'}
+      <Image
+        src={imageUrl || "/teamMembers/loe.jpg"}
         alt="team member image "
-        width='100'
-        height='100'
+        width="100"
+        height="100"
         className="w-full h-80 object-fill rounded-3xl"
       />
       <p className="font-bold text-2xl">{teamMemberName} </p>
       <p className="text-sm ">{teamMemberPosition} </p>
       <div className="flex justify-center gap-3">
         <div className="">
-          <Link href={ facebook || "facebook.com"} >
+          <Link href={facebook || "facebook.com"}>
             <Image
-              src='/icons/facebook.svg'
+              src="/icons/facebook.svg"
               alt="facebook icon"
               width="100"
               height="100"
@@ -35,9 +42,9 @@ const TeamMemberCard = ({imageUrl, teamMemberName, teamMemberPosition, facebook,
           </Link>
         </div>
         <div className="">
-          <Link href={ twitter || "twitter.com"} >
+          <Link href={twitter || "twitter.com"}>
             <Image
-              src='/icons/facebook.svg'
+              src="/icons/facebook.svg"
               alt="facebook icon"
               width="100"
               height="100"
@@ -46,9 +53,9 @@ const TeamMemberCard = ({imageUrl, teamMemberName, teamMemberPosition, facebook,
           </Link>
         </div>
         <div className="">
-          <Link href={ linkedin || "linkedin.com"} >
+          <Link href={linkedin || "linkedin.com"}>
             <Image
-              src='/icons/facebook.svg'
+              src="/icons/facebook.svg"
               alt="facebook icon"
               width="100"
               height="100"
@@ -56,10 +63,9 @@ const TeamMemberCard = ({imageUrl, teamMemberName, teamMemberPosition, facebook,
             />
           </Link>
         </div>
-        
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default TeamMemberCard
+export default TeamMemberCard;

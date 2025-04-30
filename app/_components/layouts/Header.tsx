@@ -77,12 +77,12 @@ const Header = () => {
           <Nav />
         </div>
         <div className="">
-          <button
+          <Link href={'/donation'}
             title="Donate button"
             className=" bg-[#1D2130] text-white xs:px-8 py-2 xs:max-h-11 px-6    font-medium rounded-sm"
           >
             Donate
-          </button>
+          </Link>
         </div>
       </div>
       {isMenuOpen && (
