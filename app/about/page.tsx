@@ -4,19 +4,19 @@ import SupprotMarquee from "../_components/features/SupprotMarquee";
 import AwardWrapper from "../_components/utils/AwardWrapper";
 import TeamMembersWrapper from "../_components/utils/TeamMembersWrapper";
 import Assistance from "../_components/helpers/Assistance";
+import SectionHeading from "../_components/helpers/SectionHeading";
 
 const page = () => {
   return (
     <div>
       <div className="container lg:mt-12 mx-auto lg:px-8 md:px-6 sm:px-4 flex flex-col lg:gap-8">
-        <SectionTitle title={"know about us"} />
-        <div className="flex gap-4 justify-end xl:ml-16 xl:w-[calc(100%-64px)] ">
-          <div className="">
-            <h1 className="font-bold lg:text-[52px] lg:w-[700px] leading-16">
-              We are a non-governmental organization
-            </h1>
-          </div>
-          <div className="flex flex-col gap-2 w-full xl:w-[464px]">
+        <div className="flex gap-4 justify-between  ">
+          <SectionHeading
+            title="know about us"
+            heading=" We are a non-governmental organization"
+          />
+
+          <div className="flex flex-col justify-center gap-2 w-full xl:w-[464px]">
             <h2 className="text-base font-bold">
               Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet.
               Nunc ut sem vitae risus tristique posuere.

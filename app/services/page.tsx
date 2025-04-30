@@ -2,9 +2,9 @@
 import Image from "next/image";
 import SectionTitle from "../_components/ui/SectionTitle";
 import Assistance from "../_components/helpers/Assistance";
-import ProjectCard from "../_components/cards/ProjectCard";
 import ProjectSection from "../_components/helpers/ProjectSection";
 import ServiceCard from "../_components/cards/ServiceCard";
+import SectionHeading from "../_components/helpers/SectionHeading";
 
 interface Service {
   icon: string;
@@ -55,23 +55,15 @@ const page = () => {
   return (
     <div className="my-4">
       {" "}
-      <div className="container lg:mt-12 mx-auto lg:px-8 md:px-6 sm:px-4 flex items-start  lg:gap-8 lg:my-4 lg:py-4">
-        <div className="flex flex-col gap-4 justify-start xl:w-full">
-          <SectionTitle title={"What we do"} />
-          <div className="flex flex-col gap-4 justify-end xl:ml-16  xl:w-[calc(100%-64px)] ">
-            <div className="">
-              <h1 className="font-bold lg:text-[52px] lg:w-[700px] lg:max-w-[450px] leading-16">
-                We are working cross country
-              </h1>
-              <p className="xl:my-5 max-w-[590px]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      <div className="container lg:mt-12 mx-auto lg:px-8 md:px-6 sm:px-4 flex items-start justify-between lg:gap-8 lg:my-4 lg:py-4">
+        <SectionHeading
+          title="What we do"
+          heading=" We are working cross country"
+          text="  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Suspendisse varius enim in eros elementum tristique. Duis
                 cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
-                commodo diam libero vitae erat.
-              </p>
-            </div>
-          </div>
-        </div>
+                commodo diam libero vitae erat." 
+        />
         <div className="flex flex-col gap-2 w-full xl:w-[464px] rounded-2xl">
           <Image
             src="/images/BG-Image.jpg"
