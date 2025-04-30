@@ -6,29 +6,9 @@ import ProjectCard from "../_components/cards/ProjectCard";
 import Ellipse from "../_components/features/Ellipse";
 import { cn } from "../_lib/utility";
 import Assistance from "../_components/helpers/Assistance";
+import ProjectSection from "../_components/helpers/ProjectSection";
+import ServiceCard from "../_components/cards/ServiceCard";
 
-interface Project {
-  projectTitle: string;
-  projectDescription: string;
-}
-
-const ourProjects: Project[] = [
-  {
-    projectTitle: "Mission smile 1k: Outdoor charity",
-    projectDescription:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-  },
-  {
-    projectTitle: "Weekly excursions",
-    projectDescription:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-  },
-  {
-    projectTitle: "Monthly public awareness",
-    projectDescription:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-  },
-];
 interface Service {
   icon: string;
   title: string;
@@ -163,26 +143,7 @@ const page = () => {
                 </p>
                 <div className=" flex flex-col gap-5 px-4 md:px-8 border-l-2 border-gray-400">
                   {services.map((item, index) => (
-                    <div
-                      key={index}
-                      className="flex gap-3 md:gap-6 lg:gap-8 justify-start"
-                    >
-                      <div className="w-9 ">
-                        <Image
-                          src={`${item.icon}`}
-                          alt={item.title}
-                          width={50}
-                          height={50}
-                          className="w-8 h-8"
-                        />
-                      </div>
-                      <div className=" flex flex-col gap-1 md:gap-2">
-                        <h2 className="font-bold text-lg md:text-2xl ">
-                          {item.title}{" "}
-                        </h2>
-                        <p className="md:text-base text-sm">{item.details}</p>
-                      </div>
-                    </div>
+                    <ServiceCard key={index} icon={item.icon} title={item.title} details={item.details} />
                   ))}
                 </div>
               </div>
@@ -202,33 +163,7 @@ const page = () => {
       {/* =========================================================================== */}
       {/* Achievements*/}
       {/* =========================================================================== */}
-      <div className="">
-        <div className="container mx-auto flex flex-col gap-9 md:gap-12 lg:px-8 px-4 py-9 md:py-12 lg:py-14">
-          <div className="flex gap-9 md:gap-12 lg:gap-16 items-center">
-            <div className="flex flex-col gap-9  ">
-              <div className="flex items-center justify-start gap-5 font-bold uppercase">
-                <div className="border w-9 md:w-12 lg:w-20 border-gray-70"></div>{" "}
-                <h4>Projects we have done</h4>
-              </div>
-              <div className=" ml-2 lg:w-[607px] flex flex-col gap-8">
-                <h2 className=" text-3xl sm:text-4xl md:text-5xl font-bold">
-                  We are creating a place where children with special needs can
-                  thrive
-                </h2>
-              </div>
-            </div>
-          </div>
-          <div className="container mx-auto flex flex-col md:flex-row gap-6">
-            {ourProjects.map((item, index) => (
-              <ProjectCard
-                key={index}
-                projectTitle={item.projectTitle}
-                projectDescription={item.projectDescription}
-              />
-            ))}
-          </div>
-        </div>
-      </div>
+      <ProjectSection />
       {/* =========================================================================== */}
       {/* Donation Using */}
       {/* =========================================================================== */}
