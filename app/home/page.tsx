@@ -143,7 +143,12 @@ const page = () => {
                 </p>
                 <div className=" flex flex-col gap-5 px-4 md:px-8 border-l-2 border-gray-400">
                   {services.map((item, index) => (
-                    <ServiceCard key={index} icon={item.icon} title={item.title} details={item.details} />
+                    <ServiceCard
+                      key={index}
+                      icon={item.icon}
+                      title={item.title}
+                      details={item.details}
+                    />
                   ))}
                 </div>
               </div>

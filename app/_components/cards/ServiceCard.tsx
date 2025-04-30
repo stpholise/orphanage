@@ -1,17 +1,13 @@
-import Image from 'next/image'
+import Image from "next/image";
 interface Service {
-    icon: string;
-    title: string;
-    details: string;
-  }
+  icon: string;
+  title: string;
+  details: string;
+}
 
-
-
-  
-
-const ServiceCard = ( { icon, title, details,  }: Service ) => {
+const ServiceCard = ({ icon, title, details }: Service) => {
   return (
-      <div className="flex gap-3 md:gap-6 lg:gap-8 justify-start">
+    <div className="flex gap-3 md:gap-6 lg:gap-8 justify-start">
       <div className="w-9 ">
         <Image
           src={`${icon}`}
