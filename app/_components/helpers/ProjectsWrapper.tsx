@@ -26,7 +26,7 @@ const ourProjects: Project[] = [
 const ProjectsWrapper = () => {
   return (
     <div className="">
-      <div className="container mx-auto flex flex-col md:flex-row gap-6">
+      <div className=" flex flex-col md:flex-row gap-6">
         {ourProjects.map((item, index) => (
           <ProjectCard
             key={index}
