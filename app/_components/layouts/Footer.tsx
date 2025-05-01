@@ -47,7 +47,7 @@ const Footer = () => {
             <span className={`${courgette.className}`}>i</span>
           </p>
         </div>
-        <div className="flex flex-wrap sm:flex-row gap-8 ">
+        <div className="flex flex-wrap sm:flex-row gap-8 lg:gap-24 ">
           <div className={`flex flex-col gap-4 text-[#525560]`}>
             {navItems.map((item, index) => (
               <Link

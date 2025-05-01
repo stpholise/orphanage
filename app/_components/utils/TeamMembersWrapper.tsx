@@ -89,14 +89,14 @@ const teamMembersArr: TeamMemberProp[] = [
 const TeamMembersWrapper = ({}) => {
   return (
     <div className="container  mx-auto lg:p-8 md:p-6 p-4 my-8 py-8">
-      <div className="mx-auto lg:w-[512px] flex flex-col gap-3 text-center items-center justify-center">
+      <div className="mx-auto lg:w-[512px] flex flex-col gap-3 text-center items-center justify-center lg:mb-8">
         <h3 className="lg:text-3xl font-bold">Meet our team</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
           varius enim in eros elementum tristique.
         </p>
       </div>
-      <div className="grid lg:grid-cols-4 gap-5 my-t py-t">
+      <div className="grid xl:grid-cols-4 lg:grid-cols-3 gap-5 my-t py-t">
         {teamMembersArr.map((member) => (
           <TeamMemberCard
             key={member.id}
