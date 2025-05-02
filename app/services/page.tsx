@@ -62,7 +62,7 @@ const page = () => {
           text="  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Suspendisse varius enim in eros elementum tristique. Duis
                 cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
-                commodo diam libero vitae erat." 
+                commodo diam libero vitae erat."
         />
         <div className="flex flex-col gap-2 w-full xl:w-[464px] rounded-2xl">
           <Image
