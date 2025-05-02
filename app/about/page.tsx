@@ -9,14 +9,14 @@ import SectionHeading from "../_components/helpers/SectionHeading";
 const page = () => {
   return (
     <div>
-      <div className="container lg:mt-12 mx-auto lg:px-8 md:px-6 sm:px-4 flex flex-col lg:gap-8">
+      <div className="container lg:mt-12 mx-auto lg:px-8 md:px-6 sm:px-4 flex flex-col lg:gap-10 xl:gap-12">
         <div className="flex gap-4 justify-between  ">
           <SectionHeading
             title="know about us"
             heading=" We are a non-governmental organization"
           />
 
-          <div className="flex flex-col justify-center gap-2 w-full xl:w-[464px]">
+          <div className="flex flex-col justify-center lg:gap-4  w-full xl:w-[464px] lg:w-[550px]">
             <h2 className="text-base font-bold">
               Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet.
               Nunc ut sem vitae risus tristique posuere.
@@ -32,18 +32,18 @@ const page = () => {
       </div>
 
       <div className="xl:h-[1050px] relative my-4  ">
-        <div className="xl:h-66 container mx-auto flex jusitfy-center relative">
+        <div className="xl:h-66 lg:h-48 container mx-auto flex jusitfy-center relative">
           <Image
             src="/Images/BG.svg"
             alt="bg display"
             width="200"
             height="300"
-            className="h-full w-full mx-auto xl:h-[400px] xl:w-[1200px] absolute -bottom-50 -left-50 -right-50
+            className="h-full w-full mx-auto lg:h-96 xl:h-[400px] xl:w-[1200px] absolute -bottom-50 -left-50 -right-50 
             "
           />
         </div>
-        <div className="xl:h-[780px] xl:pt-66 w-full bg-[#FCEDC6]">
-          <div className="container mx-auto lg:px-8 md:px-6 xl:gap-24 px-4  md:flex  justify-center">
+        <div className="xl:h-[780px] xl:pt-66 lg:pb-12 xl:pb-4 lg:pt-56 w-full bg-[#FCEDC6]">
+          <div className="container mx-auto lg:px-8 md:px-6 lg:gap-16 xl:gap-24 px-4   md:flex  justify-center">
             <div className=" w-96 flex flex-col gap-4">
               <h3 className="uppercase font-bold text-base">our mission</h3>
               <h4 className="font-bold text-2xl">
@@ -92,7 +92,7 @@ const page = () => {
       {/*===========================OUR JOURNY========================================= */}
       {/*============================================================================== */}
       <div className=" container mx-auto my-8 lg:px-8 md:px-6 px-4 ">
-        <div className="bg-[#F2C94C] h-[576px] flex gap-8 items-center py-12 px-8 rounded-2xl">
+        <div className="bg-[#F2C94C] xl:h-[576px] lg:h-[444px] flex gap-8 items-center lg:py-10 xl:py-12 px-8 rounded-2xl">
           <div className="px-8 flex items-center lg:gap-8">
             <div className="w-96 lg:w-[444px] flex flex-col lg:gap-6 lg:justify-center">
               <h3 className="uppercase font-bold text-base">OUR JOURNEY </h3>
@@ -126,7 +126,7 @@ const page = () => {
               alt="group photo"
               width="100"
               height="100"
-              className="lg:w-[600px] lg:h-[444px]"
+              className="lg:w-[600px] xl:h-[444px] lg:h-80"
             />
           </div>
         </div>

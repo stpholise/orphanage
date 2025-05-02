@@ -40,14 +40,14 @@ const Footer = () => {
   const pathname = usePathname();
   return (
     <div className="bg-black">
-      <div className="container mx-auto lg:px-8 px-4 lg:py-16 py-9 flex md:flex-row flex-col gap-6 md:gap-24">
+      <div className="container mx-auto lg:px-8 px-4 lg:py-16 py-9 flex md:flex-row flex-col gap-6 lg:gap-20  xl:gap-24 ">
         <div className="logo">
           <p className="text-white font-bold">
             <span>largerthan</span>{" "}
             <span className={`${courgette.className}`}>i</span>
           </p>
         </div>
-        <div className="flex flex-wrap sm:flex-row gap-8 lg:gap-24 ">
+        <div className="flex flex-wrap sm:flex-row gap-8 lg:gap-16 xl:gap-24  ">
           <div className={`flex flex-col gap-4 text-[#525560]`}>
             {navItems.map((item, index) => (
               <Link
