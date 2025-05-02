@@ -8,7 +8,7 @@ const page = () => {
   return (
     <div>
       <section className=" lg:py-16">
-        <div className="container mx-auto lg:px-8 md:px-6 px-4  flex justify-between">
+        <div className="container mx-auto lg:px-8 md:px-6 px-4  flex lg:gap-16 justify-between">
           <SectionHeading
             title="Donate"
             heading="Making a donation for our children."
