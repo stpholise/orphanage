@@ -55,7 +55,7 @@ const page = () => {
   return (
     <div className="my-4">
       {" "}
-      <div className="container lg:mt-12 mx-auto lg:px-8 md:px-6 sm:px-4 flex items-start justify-between lg:gap-8 lg:my-4 lg:py-4">
+      <div className="container lg:mt-12 mx-auto lg:px-8 md:px-6 sm:px-4 flex items-start justify-between lg:gap-8 md:gap-6 md:my-4 lg:py-4 md:py-8 ">
         <SectionHeading
           title="What we do"
           heading=" We are working cross country"
@@ -79,10 +79,10 @@ const page = () => {
       {/* =========================================================================== */}
       <div className="xl:h-[570px] bg-[#FCEDC6] my-4 py-4">
         <div className="container mx-auto lg:px-8 md:px-6 px-4 py-16">
-          <h2 className="lg:text-4xl font-bold">
+          <h2 className="lg:text-4xl md:text-3xl font-bold md:mb-6">
             What we do for our kids with special needs
           </h2>
-          <div className="grid lg:grid-cols-3 gap-8 lg:my-7 lg:py-7">
+          <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8 lg:my-7 lg:py-7">
             {services.map((service, index) => (
               <ServiceCard
                 key={index}
