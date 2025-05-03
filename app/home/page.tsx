@@ -133,7 +133,7 @@ const page = () => {
                 <SectionTitle title="What we do" />
               </div>
               </div>
-              <div className=" md:ml-16 lg:ml-16 xl:w-[607px] lg:w-[444px] flex flex-col gap-3 md:gap-4 lg:gap-8 ">
+              <div className=" md:ml-0 lg:ml-16 xl:w-[607px] lg:w-[444px] flex flex-col gap-3 md:gap-4 lg:gap-8 ">
                 <h2 className=" text-3xl sm:text-4xl md:text-5xl font-medium lg:font-bold">
                   {" "}
                   Some services we provide for our children

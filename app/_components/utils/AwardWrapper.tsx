@@ -41,8 +41,8 @@ const awardArr: AwardProp[] = [
 
 const AwardWrapper = () => {
   return (
-    <div className="container mx-auto lg:my-6 lg:py-6 flex flex-col  lg:px-8 md:px-6 px-4 lg:gap-12">
-      <h2 className="lg:text-5xl font-bold text-center">
+    <div className="container mx-auto lg:my-6 lg:py-6 md:py-10 flex flex-col  lg:px-8 md:px-6 px-4 lg:gap-12 md:gap-10">
+      <h2 className="lg:text-5xl md:text-4xl font-bold text-center">
         Awards & Recognitions
       </h2>
       <div className=" flex lg:gap-12 md:gap-8 justify-evenly">

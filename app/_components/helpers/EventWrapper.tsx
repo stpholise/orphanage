@@ -36,7 +36,7 @@ const planedEvents: PlanedEvent[] = [
 
 const EventWrapper = () => {
   return (
-    <div className="xl:w-[590px]  lg:w-[560px] h-[570px] bg-white rounded-3xl xl:p-8 lg:p-5 flex lg:flex-col gap-6">
+    <div className="xl:w-[590px]  lg:w-[560px] h-fit md:w-full bg-white rounded-3xl xl:p-8 lg:p-5 flex lg:flex-col md:p-4 gap-6">
       {planedEvents.slice(0, 3).map((event) => (
         <EventsCard
           key={event.id}

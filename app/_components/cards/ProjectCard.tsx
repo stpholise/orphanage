@@ -10,14 +10,14 @@ const ProjectCard = ({ projectTitle, projectDescription }: Project) => {
   return (
     <div
       data-aos="flip-left"
-      className="lg:p-12 px-6 py-8 md:p-8 bg-[url('/Images/BG-Image.jpg')]  rounded-3xl text-white flex flex-col h-72  md:h-96 lg:h-[420px] justify-between"
+      className="lg:p-10 xl:p-12 px-6 py-8 md:p-6 bg-[url('/Images/BG-Image.jpg')] lg:text-left md:text-center rounded-3xl text-white flex flex-col h-72  md:h-96 lg:h-[420px] justify-between"
     >
       <div className="flex flex-col gap-5 sm:gap-8">
         <h4 className="text-2xl font-bold">{projectTitle}</h4>
         <p>{projectDescription}</p>
       </div>
 
-      <button className="text-black bg-white rounded-sm w-36 h-11">
+      <button className="text-black bg-white rounded-sm w-36 h-11 md:mx-auto lg:mx-0">
         {" "}
         Learn more{" "}
       </button>
