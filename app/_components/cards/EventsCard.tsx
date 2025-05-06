@@ -10,13 +10,13 @@ interface PlanedEvent {
 
 const EventsCard = ( { id, image, title, date, information }  : PlanedEvent) => {
   return (
-      <div className="lg:min-h-40 flex lg:flex-row md:flex-col  gap-4 xl:gap-6 lg:gap-4 xl:items-start lg:items-start">
+      <div className="lg:min-h-40 flex md:flex-row md:flex-col  gap-4 xl:gap-6 lg:gap-4 xl:items-start lg:items-start">
           <Image
               src={image}
               alt={title}
               width='100'
               height='100'
-              className="rounded-2xl xl:h-36 xl:w-36 lg:w-32  lg:h-32 md:h-28 md:w-32 object-cover"
+              className="rounded-2xl xl:h-36 xl:w-36 lg:w-32  lg:h-32 md:h-20 md:w-20 object-cover"
           />
           <div className=" flex flex-col items-start justify-center xl:gap-3 lg:gap-1">
               <h2 className=" "> <Link href='#' className="lg:text-lg font-bold"> {title}</Link></h2>

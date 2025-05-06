@@ -7,7 +7,7 @@ import SummaryTabs from "../_components/features/SummaryTabs";
 const page = () => {
   return (
     <div>
-      <section className=" lg:py-16">
+      <section className=" lg:py-16 md:py-14">
         <div className="container mx-auto lg:px-8 md:px-6 px-4  flex lg:gap-16 justify-between">
           <SectionHeading
             title="Donate"
@@ -26,9 +26,9 @@ const page = () => {
           </div>
         </div>
       </section>
-      <section className="flex justify-between gap-12 container mx-auto px-4 md:px-6 lg:px-8 lg:py-16">
+      <section className="flex justify-between lg:gap-12 md:gap-10 container mx-auto px-4 md:px-6 lg:px-8 lg:py-16 md:py-14">
         <div className="w-1/2 flex flex-col gap-8">
-          <h2 className="font-bold text-5xl">
+          <h2 className="font-bold lg:text-5xl md:text-4xl">
             How you can contribute to caring for our kids
           </h2>
           <p>
@@ -46,7 +46,7 @@ const page = () => {
       <div className="container mx-auto px-4 md:px-6 lg:px-8">
         <div className="border bordder-gray-50 height-0 "></div>
       </div>
-      <section className="flex justify-stretch lg:gap-14 container mx-auto px-4 md:px-6 lg:px-8 lg:py-16">
+      <section className="flex justify-stretch lg:gap-14 md:gap-11 container mx-auto px-4 md:px-6 lg:px-8 lg:py-16 md:py-14">
         <h2 className="max-w-96 lg:w-80 font-bold text-5xl">
           How we use your donation
         </h2>
@@ -62,7 +62,7 @@ const page = () => {
           cursus id rutrum lorem imperdiet.
         </p>
       </section>
-      <div className="container mx-auto lg:py-16 lg:px-8 md:px-6 px-4">
+      <div className="container mx-auto lg:py-16 md:py-14 lg:px-8 md:px-6 px-4">
         <Volunteer />
       </div>
     </div>

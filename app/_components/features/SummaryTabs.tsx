@@ -38,7 +38,7 @@ const SummaryTabs = () => {
   }, [currentTab]);
 
   return (
-    <div className="max-w-[480px]">
+    <div className=" lg:w-[480px] max-w-[480px] md:w-96">
       <div className="headers flex gap-4  border-b-2 border-gray-100 w-fit">
         {tabs.map((tab) => (
           <button

@@ -8,7 +8,7 @@ const page = () => {
   return (
     <div>
       <div className="bg-[#FCEDC6] py-14">
-        <div className="container mx-auto lg:px-8 md:px-6 px-4 flex lg:gap-14 md:flex-col lg:flex-row lg:text-left ">
+        <div className="container mx-auto lg:px-8 md:px-6 px-4 flex lg:gap-14 md:flex-row lg:text-left ">
           <SectionHeading
             title="Top news"
             heading=" Our goal is to provide inclusive care for children with special
