@@ -37,15 +37,15 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="container mx-auto lg:w-[760px] py-8 my-8">
+    <div className="container mx-auto md:w-[760px] py-8 my-8">
       <Formik
         initialValues={initialValues}
         validationSchema={validation}
         onSubmit={contactFormSubmission}
       >
         {({ isSubmitting, dirty, isValid }) => (
-          <Form className="flex flex-col gap-8">
-            <div className=" grid grid-cols-2 gap-8">
+          <Form className="flex flex-col gap-6 md:gap-8">
+            <div className=" grid grid-cols-1 xs:grid-cols-2 gap-5 md:gap-8">
               <div className=" w-full ">
                 <label
                   htmlFor="firstName"
