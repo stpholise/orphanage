@@ -39,7 +39,7 @@ const Header = () => {
 
   return (
     <div className="h-fit sticky top-0 z-30  bg-white border-b-2 border-[rgba(0,0,0, 40)]">
-      <div className="container mx-auto  flex items-center justify-between md:px-8 px-4  py-2 lg:py-4 sm:h-12 xl:h-20 lg:h-16  ">
+      <div className="container mx-auto  flex items-center justify-between md:px-8 px-4  py-2 lg:py-4 h-12 sm:h-12 xl:h-20 lg:h-16  ">
         <div className="logo flex gap-2 items-center">
           <div className="button md:hidden" onClick={handleMenuState}>
             {isMenuOpen ? (
@@ -67,9 +67,9 @@ const Header = () => {
         </div>
         <div
           className={clsx(
-            "md:static absolute top-14 sm:top-13 left-0 bottom-0 md:block bg-[#1D2130] z-20   md:bg-transparent w-72  xs:w-96 md:w-fit px-5 py-9 md:px-0 md:py-0",
+            "md:static absolute top-12 sm:top-12 left-0 bottom-0 md:block bg-[#1D2130] z-20   md:bg-transparent w-72  xs:w-96 md:w-fit px-5 py-9 md:px-0 md:py-0",
             {
-              "animate__animated animate__fadeInLeft sm:-ml-12  sm:h-[calc(100vh-50px)]":
+              "animate__animated animate__fadeInLeft xs:-ml-12 sm:-ml-1 h-[calc(100vh-48px)]  sm:h-[calc(100vh-50px)]":
                 isMenuOpen,
               hidden: !isMenuOpen,
             }

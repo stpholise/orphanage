@@ -1,24 +1,19 @@
 module.exports = {
-    content: [
-      "./pages/**/*.{js,ts,jsx,tsx}",
-      "./components/**/*.{js,ts,jsx,tsx}",
-      "./app/**/*.{js,ts,jsx,tsx}", // if using App Router
-    ],
-    safelist: [
-      'bg-[#BEF3C0]',
-      'bg-[#AC94F1]',
-      'bg-[#FFF0CA]',
-      'bg-[#F9CF64]',
-      'bg-[#F38FBF]'
-    ],
-    theme: {
-      extend: {
-        screens: {
-          "xs": "425px",
-          "2xs": "375px",
-          "3xs": "320px"
-        }
-      },
-    },
-    plugins: [],
-  }
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx}", // if using App Router
+  ],
+  theme: {
+  
+  },
+  safelist: [
+    "bg-[#BEF3C0]",
+    "bg-[#AC94F1]",
+    "bg-[#FFF0CA]",
+    "bg-[#F9CF64]",
+    "bg-[#F38FBF]",
+  ],
+
+  plugins: [],
+};
