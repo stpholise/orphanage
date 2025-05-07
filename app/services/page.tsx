@@ -53,9 +53,9 @@ const services: Service[] = [
 
 const page = () => {
   return (
-    <div className="my-4">
+    <div className="my-8">
       {" "}
-      <div className="container lg:mt-12 mx-auto lg:px-8 md:px-6 sm:px-4 flex items-start justify-between lg:gap-8 md:gap-6 md:my-4 lg:py-4 md:py-8 ">
+      <div className="container lg:mt-12 mx-auto sm:gap-8 lg:px-8 md:px-6 px-4 flex items-start justify-between lg:gap-8 md:gap-6 md:my-4 lg:py-4 md:py-8 ">
         <SectionHeading
           title="What we do"
           heading=" We are working cross country"
@@ -64,13 +64,13 @@ const page = () => {
                 cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
                 commodo diam libero vitae erat."
         />
-        <div className="flex flex-col gap-2 w-full xl:w-[464px] rounded-2xl">
+        <div className="hidden sm:flex flex-col gap-2 w-fit xl:w-[464px] rounded-2xl ">
           <Image
             src="/Images/BG-Image.jpg"
             alt="background hero"
             height="100"
             width="100"
-            className="md:h-80 md:w-[460px] rounded-3xl object-fit"
+            className="md:h-80 md:w-[460px] h-64 w-72 rounded-3xl object-fit"
           />
         </div>
       </div>
@@ -78,8 +78,8 @@ const page = () => {
       {/* services */}
       {/* =========================================================================== */}
       <div className="xl:h-[570px] bg-[#FCEDC6] my-4 py-4">
-        <div className="container mx-auto lg:px-8 md:px-6 px-4 py-16">
-          <h2 className="lg:text-4xl md:text-3xl font-bold md:mb-6">
+        <div className="container mx-auto lg:px-8 md:px-6 px-4 md:py-16 py-8">
+          <h2 className="lg:text-4xl md:text-3xl text-2xl font-bold mb-4 md:mb-6">
             What we do for our kids with special needs
           </h2>
           <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8 lg:my-7 lg:py-7">

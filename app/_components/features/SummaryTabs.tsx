@@ -38,14 +38,14 @@ const SummaryTabs = () => {
   }, [currentTab]);
 
   return (
-    <div className="max-w-[480px]">
-      <div className="headers flex gap-4  border-b-2 border-gray-100 w-fit">
+    <div className=" lg:w-[480px] max-w-[480px] md:w-96 sm:w-80">
+      <div className="headers flex sm:gap-4 gap-2  border-b-2 border-gray-100 w-fit">
         {tabs.map((tab) => (
           <button
             key={tab.value}
             onClick={() => setCurrentTab(tab.value)}
             className={clsx(
-              " px-4 py-2  font-medium",
+              " px-2 mr-1 sm:px-4 py-2 font-semibold md:font-medium",
               currentTab === tab.value
                 ? "border-b-2 border-[#F2C94C] "
                 : "border-b-2 border-transparent"
@@ -55,9 +55,9 @@ const SummaryTabs = () => {
           </button>
         ))}
       </div>
-      <div className="body py-6">
+      <div className="body py-4 sm:py-6">
         {tabBody.map((text, index) => (
-          <p key={index} className="py-2">{text} </p>
+          <p key={index} className=" py-1 sm:py-2">{text} </p>
         ))}
       </div>
     </div>
