@@ -11,7 +11,7 @@ const SectionHeading = ({title, heading, text, button} : SectionHeadingProps) =>
     <div className="">
     <SectionTitle title={title} />
     <div className="lg:ml-16 md:ml-0  max-w-[510px] xl:w-[510px] lg:w-[444px] md:w-96  flex flex-col lg:gap-6 gap-4 my-3 md:my-6">
-      <h1 className="lg:text-[52px] md:text-5xl text-3xl xl:w-[490px] max-w-[490px] font-bold leading:10 md:leading-16  ">
+      <h1 className="lg:text-[52px] md:text-5xl xs:text-3xl text-2xl xl:w-[490px] max-w-[490px] font-bold leading:10 md:leading-16  ">
        {heading}
       </h1>{ text &&
       <p className="">

@@ -4,7 +4,7 @@ const page = () => {
   return (
     <div className="">
       <div className="lg:h-[580px] w-full bg-[#FCEDC6] lg:py-16 py-12 ">
-        <div className="container mx-auto px-4 md:px-6 flex flex-col   md:flex-row lg:gap-28  lg:px-8">
+        <div className="container mx-auto px-4 md:px-6 flex flex-col   md:flex-row lg:gap-28 gap-8 lg:px-8">
           <SectionHeading
             title="Contact us"
             heading=" We'd love to hear from you"
@@ -12,7 +12,7 @@ const page = () => {
                 to contact us through the form or the following details."
           />
 
-          <div className="lg:w-80 h-96 flex flex-col items-stretch lg:gap-8">
+          <div className="lg:w-80 md:h-96 flex flex-col items-stretch lg:gap-8">
             <div className="border-b border-gray-200 h-1/3">
               <h3 className="md:text-xl font-bold mb-4">Let&apos;s talk! </h3>
               <div className=" flex xs:flex-row flex-col gap-4 pb-3">
