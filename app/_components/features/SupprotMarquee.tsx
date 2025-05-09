@@ -12,7 +12,7 @@ const marqueeContents: string[] = [
 
 const SupprotMarquee = () => {
   return (
-    <div>
+    <div className="my-3">
       <Marquee>
         {marqueeContents.map((item, index) => (
           <div key={index} className="">
@@ -21,7 +21,7 @@ const SupprotMarquee = () => {
               alt="marquee item"
               height="50"
               width="200"
-              className="w-40 h-12 mr-9"
+              className="w-40 md:h-12 h-8 mr-9"
             />
           </div>
         ))}

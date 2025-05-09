@@ -111,7 +111,7 @@ const page = () => {
               />
             </div>
           </div>
-          <div className="container mx-auto flex flex-col gap-6">
+          <div className="container mx-auto flex flex-col gap-4 sm:gap-6">
             <div className="flex gap-8 items-center">
               <h4 className="whitespace-nowrap">OUR SUPPORTERS</h4>{" "}
               <div className="border border-gray-600 h-0 w-full"></div>

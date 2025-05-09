@@ -30,7 +30,9 @@ const Nav = () => {
           href={item.link}
           key={index}
           className={clsx("outline-none", {
-            "": pathname === item.link,
+            "font-bold text-red tesxt-lg sm:test-base":
+              pathname == item.link ||
+              (item.link !== "/" && pathname.startsWith(item.link)),
           })}
         >
           {item.title}
