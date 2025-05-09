@@ -67,9 +67,9 @@ const Header = () => {
         </div>
         <div
           className={clsx(
-            "md:static absolute top-12 sm:top-12 left-0 bottom-0 md:block bg-[#1D2130] z-20   md:bg-transparent w-72  xs:w-96 md:w-fit px-5 py-9 md:px-0 md:py-0",
+            "md:static absolute top-12 sm:top-12 left-0 bottom-0 md:block bg-[#1D2130] z-20   md:bg-transparent w-72  xs:w-96 md:w-fit px-4 py-9 md:px-0 md:py-0",
             {
-              "animate__animated animate__fadeInLeft xs:-ml-1 sm:-ml-1 h-[calc(100vh-48px)]  sm:h-[calc(100vh-50px)]":
+              "animate__animated animate__fadeInLeft animate__faster	 animata xs:-ml-1 sm:-ml-1 h-[calc(100vh-48px)]  sm:h-[calc(100vh-50px)]":
                 isMenuOpen,
               hidden: !isMenuOpen,
             }

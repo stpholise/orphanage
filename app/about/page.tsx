@@ -34,7 +34,7 @@ const page = () => {
       <div className="xl:h-[1050px] relative my-4  ">
         <div className="xl:h-66 lg:h-48 md:h-32 container mx-auto flex jusitfy-center relative ">
           <Image
-            src="/Images/BG.svg"
+            src="/Images/BG.jpg"
             alt="bg display"
             width="200"
             height="300"
