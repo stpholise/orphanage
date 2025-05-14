@@ -23,7 +23,7 @@ const SectionHeading = ({title, heading, text, button} : SectionHeadingProps) =>
           href="#"
           label={button}
           target="_self"
-          bg="bg-[#F2C94C]"
+          bg="bg-[#F2C94C] dark:text-black"
         />
       </div>}
     </div>

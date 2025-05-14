@@ -12,8 +12,8 @@ const marqueeContents: string[] = [
 
 const SupprotMarquee = () => {
   return (
-    <div className="my-3">
-      <Marquee>
+    <div className="my-3 dark:bg-white">
+      <Marquee >
         {marqueeContents.map((item, index) => (
           <div key={index} className="">
             <Image
