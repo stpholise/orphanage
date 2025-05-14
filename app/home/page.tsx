@@ -63,7 +63,7 @@ const chartData: ChartData[] = [
 
 const page = () => {
   return (
-    <div className="text-black bg-white">
+    <div className="text-black bg-white dark:bg-black ">
       {/* =========================================================================== */}
       {/* Hero */}
       {/* =========================================================================== */}
@@ -72,14 +72,14 @@ const page = () => {
       {/* =========================================================================== */}
       {/* About us */}
       {/* =========================================================================== */}
-      <div className="">
+      <div className=" dark:bg-white">
         <div className="container mx-auto flex flex-col gap-9 md:gap-24 lg:px-8 md:px-6 px-4 py-9 md:py-12 lg:py-14 py:8">
-          <div className="flex md:flex-row flex-col md:gap-11 lg:gap-16 items-center justify-between">
+          <div className="flex md:flex-row flex-col md:gap-11 lg:gap-16 items-center justify-between ">
             <div className="flex flex-col gap-5 md:gap-5 lg:gap-9 lg:h-[460px] ">
               <div className="flex items-center justify-start gap-3 md:gap-5 font-bold">
                 <SectionTitle title="KNOW ABOUT US" />
               </div>
-              <div className=" xl:ml-16 lg:ml-16 xl:w-[607px] lg:[507px] flex flex-col gap-4 lg:gap-8 ">
+              <div className=" xl:ml-16 lg:ml-16 xl:w-[607px] lg:[507px] flex flex-col gap-4 lg:gap-8  ">
                 <h2 className=" md:text-4xl lg:text-5xl">
                   {" "}
                   We provide a place for children with special needs
@@ -111,7 +111,7 @@ const page = () => {
               />
             </div>
           </div>
-          <div className="container mx-auto flex flex-col gap-4 sm:gap-6">
+          <div className="container mx-auto flex flex-col gap-4 sm:gap-6 ">
             <div className="flex gap-8 items-center">
               <h4 className="whitespace-nowrap">OUR SUPPORTERS</h4>{" "}
               <div className="border border-gray-600 h-0 w-full"></div>

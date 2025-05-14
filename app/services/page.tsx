@@ -78,11 +78,11 @@ const page = () => {
       {/* services */}
       {/* =========================================================================== */}
       <div className="xl:h-[570px] bg-[#FCEDC6] my-4 py-4">
-        <div className="container mx-auto lg:px-8 md:px-6 px-4 md:py-16 py-8">
+        <div className="container mx-auto lg:px-8 md:px-6 px-4 md:py-16 py-8 dark:text-gray-700">
           <h2 className="lg:text-4xl md:text-3xl text-2xl font-bold mb-4 md:mb-6">
             What we do for our kids with special needs
           </h2>
-          <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8 lg:my-7 lg:py-7">
+          <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8 lg:my-7 lg:py-7 ">
             {services.map((service, index) => (
               <ServiceCard
                 key={index}

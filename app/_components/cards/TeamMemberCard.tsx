@@ -19,7 +19,7 @@ const TeamMemberCard = ({
   linkedin,
 }: TeamMemberProp) => {
   return (
-    <div className="xl:w-72 md:w-56 lg:w-72 text-center flex flex-col md:gap-2 lg:gap-3 gap-1 ">
+    <div className="xl:w-72 md:w-56 lg:w-72 text-center dark:text-gray-800 flex flex-col md:gap-2 lg:gap-3 gap-1 dark:bg-gray-200 xl:p-3 p-2 rounded-3xl ">
       <Image
         src={imageUrl || "/teamMembers/loe.jpg"}
         alt="team member image "

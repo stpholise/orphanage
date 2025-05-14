@@ -42,7 +42,7 @@ const Modals = ({ setIsPopupActive }: ModalProp) => {
   };
 
   return (
-    <div className="container mx-auto w-full sm:w-calc(100% - 2rem) md:w-[720px] z-40 bg-white px-4 py-8 my-8 rounded-sm fixed -left-1/2 -right-1/2 top-1/35 xs:top-1/28 sm:top-1/13 overflow-auto">
+    <div className=" dark:bg-gray-50 container mx-auto w-full sm:w-calc(100% - 2rem) md:w-[720px] z-40 bg-white px-4 py-8 my-8 rounded-sm fixed -left-1/2 -right-1/2 top-1/35 xs:top-1/28 sm:top-1/13 overflow-auto">
       <div
         onClick={() => setIsPopupActive(false)}
         className="absolute top-3 right-3 bg-black rounded-sm sm:rounded-lg sm:w-9 sm:h-9 w-6 h-6 flex items-center justify-center"
@@ -62,7 +62,7 @@ const Modals = ({ setIsPopupActive }: ModalProp) => {
       >
         {({ isSubmitting, dirty, isValid }) => (
           <Form className="flex flex-col gap-6 md:gap-5 ">
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2 dark:text-gray-700">
               <h2 className="sm:text-4xl text-2xl font-bold">
                 Join as a volunteer
               </h2>
@@ -83,7 +83,7 @@ const Modals = ({ setIsPopupActive }: ModalProp) => {
                   type="text"
                   name="firstName"
                   id="firstName"
-                  className="outline-none px-2 py-1 border-b-2 broder-gray-300 w-full"
+                  className="outline-none px-2 py-1 border-b-2 dark:border-b-2 broder-gray-300 dark:broder-gray-600  w-full"
                 />
                 <ErrorMessage
                   name="firstName"
@@ -131,7 +131,7 @@ const Modals = ({ setIsPopupActive }: ModalProp) => {
               </div>
             </div>
             <div className="w-full">
-              <label htmlFor="message">message</label>
+              <label htmlFor="message text-[#1D2130] dark:text-gray-700">message</label>
               <Field
                 as="textarea"
                 name="message"
