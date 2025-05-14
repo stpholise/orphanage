@@ -38,7 +38,7 @@ const Header = () => {
   }, [pathname]);
 
   return (
-    <div className="h-fit sticky top-0 z-30  bg-white border-b-2 border-[rgba(0,0,0, 40)]">
+    <div className="h-fit sticky top-0 z-30  bg-white dark:bg-black border-b-2 border-[rgba(0,0,0, 40)]">
       <div className="container mx-auto  flex items-center justify-between md:px-8 px-4  py-2 lg:py-4 h-12 sm:h-12 xl:h-20 lg:h-16  ">
         <div className="logo flex gap-2 items-center">
           <div className="button md:hidden" onClick={handleMenuState}>
@@ -59,7 +59,7 @@ const Header = () => {
             )}
           </div>
           <Link href="/" className="outline-none">
-            <p className="text-black font-bold whitespace-nowrap">
+            <p className="text-black dark:text-gray-200 font-bold whitespace-nowrap">
               <span>largerthan</span>{" "}
               <span className={`${courgette.className}`}>i</span>
             </p>
@@ -76,12 +76,17 @@ const Header = () => {
           )}
         >
           <Nav />
+
         </div>
         <div className="">
           <Link
             href={"/donation"}
             title="Donate button"
-            className=" bg-[#1D2130] text-white xs:px-8 py-2 xs:max-h-11 px-6    font-medium rounded-sm"
+            className={clsx( " bg-[#1D2130] text-white   dark:text-gray-800  xs:px-8 py-2 xs:max-h-11 px-6    font-medium rounded-sm", {
+              'dark:bg-[#F2C94C]': pathname == '/donation',
+              'dark:bg-[#FCEDC6]': pathname != '/donation',
+              
+            })}
           >
             Donate
           </Link>

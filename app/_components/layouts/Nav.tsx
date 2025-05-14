@@ -22,7 +22,7 @@ const Nav = () => {
   return (
     <div
       className={clsx(
-        `flex md:flex-row gap-4 text-white md:text-[#525560] flex-col w-full `
+        `flex md:flex-row gap-4 text-white md:text-[#525560] md:dark:text-gray-200 flex-col w-full `
       )}
     >
       {navItems.map((item, index) => (
