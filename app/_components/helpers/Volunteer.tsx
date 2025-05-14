@@ -18,7 +18,7 @@ const Volunteer = () => {
           You can contribute to provide a place for children with special needs!
         </h3>
         <div className=" flex flex-col md:flex-row items-center justify-center gap-4">
-          <button onClick={() => setIsPopupActive(true)}  className="bg-[#F2C94C] w-44 md:w-52 h-10 md:h-12 rounded-sm">
+          <button onClick={() => setIsPopupActive(true)}  className="bg-[#F2C94C] text-gray-200 dark:text-gray-700 w-44 md:w-52 h-10 md:h-12 rounded-sm">
             Join as a volunteer
           </button>
           <button className="bg-white  text-black w-28 md:w-36 h-10 md:h-12 rounded-sm">

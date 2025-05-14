@@ -21,7 +21,7 @@ const page = () => {
               Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet.
               Nunc ut sem vitae risus tristique posuere.
             </h2>
-            <p className="text-[#1D2130]">
+            <p className="text-[#1D2130] dark:text-gray-200">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Suspendisse varius enim in eros elementum tristique. Duis cursus,
               mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam
@@ -31,18 +31,18 @@ const page = () => {
         </div>
       </div>
 
-      <div className="xl:h-[1050px] relative my-4  ">
+      <div className="xl:h-[1050px] relative my-4 dark:text-gray-800 ">
         <div className="xl:h-66 lg:h-48 md:h-32 container mx-auto flex jusitfy-center relative ">
           <Image
             src="/Images/BG.jpg"
             alt="bg display"
             width="200"
             height="300"
-            className="h-full w-full mx-auto md:h-96 lg:h-96 xl:h-[400px] xl:w-[1200px] lg:w-[860px] md:w-[760px] absolute -bottom-50 -left-50 -right-50  
+            className="h-full w-full mx-auto md:h-96 lg:h-96 xl:h-[400px] xl:w-[1200px] lg:w-[860px] md:w-[760px] absolute -bottom-50 -left-50 -right-50 rounded-2xl 
             "
           />
         </div>
-        <div className="xl:h-[780px] xl:pt-66 lg:pb-12 md:pb-10 xl:pb-4 lg:pt-56 md:pt-52 pt-12  pb-10 w-full bg-[#FCEDC6]">
+        <div className="xl:h-[780px] xl:pt-66 lg:pb-12 md:pb-10 xl:pb-4 lg:pt-56 md:pt-52 pt-12  pb-10 w-full bg-[#FCEDC6] ">
           <div className="container mx-auto lg:px-8 md:px-6 lg:gap-16 md:gap-12 xl:gap-24 gap-6 px-4   flex  flex-col md:flex-row justify-center">
             <div className=" w-full md:w-96 flex flex-col gap-2 md:gap-4">
               <h3 className="uppercase font-bold text-base">our mission</h3>
@@ -92,7 +92,7 @@ const page = () => {
       {/*===========================OUR JOURNY========================================= */}
       {/*============================================================================== */}
       <div className=" container mx-auto my-8 lg:px-8 md:px-6 px-4 ">
-        <div className="bg-[#F2C94C]   xl:h-[576px] lg:h-[444px] md:h-96 flex md:flex-row flex-col-reverse gap-8 items-center md:py-8 lg:py-10 xl:py-12 md:px-6 lg:px-8 px-4 py-5 rounded-2xl ">
+        <div className="bg-[#F2C94C] dark:text-gray-800  xl:h-[576px] lg:h-[444px] md:h-96 flex md:flex-row flex-col-reverse gap-8 items-center md:py-8 lg:py-10 xl:py-12 md:px-6 lg:px-8 px-4 py-5 rounded-2xl ">
           <div className="lg:px-8 md:px-3 flex  items-center lg:gap-8 ">
             <div className="md:w-96 lg:w-[444px] flex flex-col lg:gap-6 md:gap-4 gap-3 lg:justify-center">
               <h3 className="uppercase font-bold text-base">OUR JOURNEY </h3>

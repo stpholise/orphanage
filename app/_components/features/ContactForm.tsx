@@ -49,7 +49,7 @@ const ContactForm = () => {
               <div className=" w-full ">
                 <label
                   htmlFor="firstName"
-                  className="block text-xs font-bold text-[#1D2130]"
+                  className="block text-xs font-bold text-[#1D2130] dark:text-gray-100"
                 >
                   First Name
                 </label>
@@ -68,7 +68,7 @@ const ContactForm = () => {
               <div className="w-full ">
                 <label
                   htmlFor="lastName"
-                  className="block text-xs font-bold text-[#1D2130]"
+                  className="block text-xs font-bold text-[#1D2130] dark:text-gray-100"
                 >
                   Last Name
                 </label>
@@ -87,7 +87,7 @@ const ContactForm = () => {
               <div className="w-full">
                 <label
                   htmlFor="email"
-                  className="block text-xs font-bold text-[#1D2130]"
+                  className="block text-xs font-bold text-[#1D2130] dark:text-gray-100"
                 >
                   Email
                 </label>
@@ -106,7 +106,7 @@ const ContactForm = () => {
               <div className="w-full">
                 <label
                   htmlFor="subject"
-                  className="block text-xs font-bold  text-[#1D2130]"
+                  className="block text-xs font-bold  text-[#1D2130] dark:text-gray-100"
                 >
                   Subject
                 </label>
@@ -124,15 +124,15 @@ const ContactForm = () => {
               </div>
             </div>
             <div className="w-full">
-              <label htmlFor="message">message</label>
+              <label htmlFor="message text-[#1D2130] dark:text-gray-100">message</label>
               <Field
                 as="textarea"
                 name="message"
                 id="message"
-                className="outline-none border-2 broder-gray-200 w-full h-36 rounded-sm"
+                className="outline-none border-2 broder-gray-200 w-full h-36 rounded-sm p-2"
               />
             </div>
-            <div className="mx-auto">
+            <div className="mx-auto lg:mx-0">
               <button
                 disabled={!isValid || isSubmitting || !dirty}
                 className={clsx(" w-44 h-10 ", {

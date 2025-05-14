@@ -7,7 +7,7 @@ interface Service {
 
 const ServiceCard = ({ icon, title, details }: Service) => {
   return (
-    <div className="flex gap-3 md:gap-4 lg:gap-8 justify-start">
+    <div className="flex gap-3 md:gap-4 lg:gap-8 justify-start ">
       <div className="lg:w-14 md:w-20  ">
         <Image
           src={`${icon}`}
