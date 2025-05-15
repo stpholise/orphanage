@@ -36,8 +36,8 @@ const page = () => {
           <Image
             src="/Images/BG.jpg"
             alt="bg display"
-            width="200"
-            height="300"
+            width="1200"
+            height="449"
             className="h-full w-full mx-auto md:h-96 lg:h-96 xl:h-[400px] xl:w-[1200px] lg:w-[860px] md:w-[760px] absolute -bottom-50 -left-50 -right-50 rounded-2xl 
             "
           />
@@ -124,8 +124,8 @@ const page = () => {
             <Image
               src={"/Images/our_journy.png"}
               alt="group photo"
-              width="100"
-              height="100"
+              width="612"
+              height="448"
               className="lg:w-[600px] xl:h-[444px] lg:h-80 md:h-72 md:w-72 sm:w-80 xs:w-72 xxs:w-64 w-56 "
             />
           </div>

@@ -6,10 +6,10 @@ const page = () => {
   return (
     <div className="lg:py-16"> 
 
-      <section className="container mx-auto xl:px-32 lg:px-28 md:px-16 px-8  ">
+      <section className="container mx-auto xl:px-32 lg:px-28 py-8 md:px-16 px-8  ">
         <SectionTitle title="Our project" />
-        <div className="lg:ml-16 flex flex-col gap-4 md:gap-6  lg:py-12 ">
-          <h1 className="lg:text-[52px] font-bold leading-16">Mission Smile 1k: Outdoor charity outreach</h1>
+        <div className="lg:ml-16 flex flex-col gap-4 md:gap-6 py-8  lg:py-12 ">
+          <h1 className="lg:text-[52px] md:text-4xl text-3xl font-bold md:leading-12 lg:leading-16">Mission Smile 1k: Outdoor charity outreach</h1>
           <div className=" flex flex-col gap-4  md:gap-6">
             <p className="">
               Et morbi vitae lobortis nam odio. Faucibus vitae vel neque nullam
@@ -40,8 +40,8 @@ const page = () => {
               neque. Massa ultricies faucibus pellentesque risus duis est
             </p>
           </div>
-          <div className="flex w-full lg:gap-16 items-center justify-center bg-[url('/Images/BG-Image.jpg')] bg-cover h-72 py-9 md:h-96 rounded-lg "></div>
-          <h2 className="lg:text-4xl font-bold ">Some cool heading</h2>
+          <div className="flex w-full gap-8 lg:gap-16 items-center justify-center bg-[url('/Images/BG-Image.jpg')] bg-cover h-72 py-9 md:h-96 rounded-lg "></div>
+          <h2 className="lg:text-4xl font-bold text-2xl sm:text-3xl">Some cool heading</h2>
           <p className="">
             Posuere sed pulvinar enim faucibus justo, cursus. In diam facilisi
             at sit convallis blandit blandit in. Maecenas odio orci lectus urna
@@ -63,7 +63,7 @@ const page = () => {
           </p>
         </div>
       </section>
-      <section className="container mx-auto lg:px-8 md:px-6 px-4 flex flex-col lg:gap-12">
+      <section className="container mx-auto lg:px-8 md:px-6 px-4 flex flex-col gap-8 lg:gap-12 lg:pb-16 pb-12">
         <SectionTitle title="More projects" />
         <ProjectsWrapper />
         <Volunteer />

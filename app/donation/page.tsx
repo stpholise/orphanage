@@ -19,8 +19,8 @@ const page = () => {
             <Image
               src="/Images/BG-Image.jpg"
               alt="background hero"
-              height="100"
-              width="100"
+              height="700"
+              width="1500"
               className="md:h-80 md:w-[460px] sm:w-64 sm:h-64 rounded-3xl object-fit"
             />
           </div>
