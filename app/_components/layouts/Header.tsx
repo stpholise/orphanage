@@ -14,7 +14,16 @@ const courgette = Courgette({
 });
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+  const [isDark, setIsDark] = useState(false);
+  useEffect( () => {
+    const mediaQuery = window.matchMedia( '(prefers-color-scheme: dark)' );
+    setIsDark( mediaQuery.matches );
+     
+    const handler = (e: MediaQueryListEvent) => setIsDark(e.matches);
+    mediaQuery.addEventListener('change', handler);
+    
+    return () => mediaQuery.removeEventListener('change', handler);
+  }, []);
   const handleMenuState = () => {
     setIsMenuOpen((prev) => (prev = !prev));
   };
@@ -44,18 +53,20 @@ const Header = () => {
           <div className="button md:hidden" onClick={handleMenuState}>
             {isMenuOpen ? (
               <Image
-                src="/Icons/clear.svg"
+                src={isDark ? "/Icons/light_clear.svg" :"/Icons/clear.svg"}
                 alt="hamburger menu"
                 width="22"
                 height="22"
               />
             ) : (
+                
               <Image
-                src="/Icons/Hamborger-Icon.svg"
+                src={isDark ?  "/Icons/light_hamburger.svg" : "/Icons/Hamborger-Icon.svg"}
                 alt="hamburger menu"
                 width="22"
                 height="22"
-              />
+                />
+                
             )}
           </div>
           <Link href="/" className="outline-none">

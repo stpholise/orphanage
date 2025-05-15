@@ -105,9 +105,13 @@ const page = () => {
               <Image
                 src="/Images/BG1.jpg"
                 alt="kids image"
-                width="100"
-                height="100"
-                className="xl:w-[444px] lg:h-[444px] md:h-96 md:min-w-72 md:w-80 w-7/12 h-68 rounded-3xl "
+                width="800"
+                height="500"
+                className="xl:w-[444px] lg:h-[544px] md:h-96 md:min-w-72 md:w-80 w-7/12 h-68 rounded-3xl object-cover "
+                style={{
+                  colorScheme: 'light only',
+                  forcedColorAdjust: 'none'
+                }}
               />
             </div>
           </div>
@@ -156,11 +160,11 @@ const page = () => {
             </div>
             <div className="hidden md:flex ">
               <Image
-                src="/Images/BG2.jpg"
+                src="/Images/BG2.JPG"
                 alt="kids image"
-                width="100"
-                height="100"
-                className="lg:w-[444px] lg:h-[544px] md:min-w-72 md:w-80 md:h-96 rounded-3xl border border-red-200"
+                width="480"
+                height="650"
+                className="lg:w-[444px] lg:h-[544px] md:min-w-72 md:w-80 md:h-96 rounded-3xl"
               />
             </div>
           </div>

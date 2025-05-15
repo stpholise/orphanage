@@ -22,7 +22,7 @@ const Nav = () => {
   return (
     <div
       className={clsx(
-        `flex md:flex-row gap-4 text-white md:text-[#525560] md:dark:text-gray-200 flex-col w-full `
+        `flex md:flex-row gap-4 text-gray-200 md:text-[#525560] md:dark:text-gray-200 flex-col w-full `
       )}
     >
       {navItems.map((item, index) => (
@@ -30,7 +30,7 @@ const Nav = () => {
           href={item.link}
           key={index}
           className={clsx("outline-none", {
-            "font-bold text-red tesxt-lg sm:test-base":
+            "font-bold text-white tesxt-lg sm:test-xl":
               pathname == item.link ||
               (item.link !== "/" && pathname.startsWith(item.link)),
           })}

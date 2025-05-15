@@ -23,8 +23,8 @@ const TeamMemberCard = ({
       <Image
         src={imageUrl || "/teamMembers/loe.jpg"}
         alt="team member image "
-        width="100"
-        height="100"
+        width="290"
+        height="320"
         className="w-full lg:h-80 md:h-64 sm:h-64 h-60 object-cover rounded-3xl"
       />
       <p className="font-bold md:text-xl lg:text-2xl sm:text-xl text-lg md:break-normal">{teamMemberName} </p>
